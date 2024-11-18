@@ -2,7 +2,7 @@
 URL configuration for project2 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.2/topics/http/urls/
+    https://docs.djangoproject.com/en/5.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -18,8 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from app.views import telugu
 from app.views import hindi
+
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("telugu/",telugu,name='telugu'),
-    path("hindi/",hindi,name='hindi'),
+    path('admin/', admin.site.urls),
+    path('telugu/',telugu,name='telugu'),
+    path('hindi/',hindi,name='hindi'),
 ]

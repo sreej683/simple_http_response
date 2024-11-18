@@ -8,4 +8,4 @@ def telugu(request):
 
 
 def hindi(request):
-    return HttpResponse('this is our hindi movie')
+    return HttpResponse('this is hindi movie')
